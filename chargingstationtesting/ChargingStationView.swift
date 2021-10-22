@@ -9,8 +9,13 @@ import SwiftUI
 
 struct ChargingStationView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("STATION_NAME_1")
+            Text("Free")
+            Button(action: {}) {
+                Text("Start charging")
+            }
+        }
     }
 }
 
