@@ -14,7 +14,7 @@ Pods
 # Generated files
 *.o
 *.pyc
-
+.idea
 
 #Python modules
 MANIFEST
