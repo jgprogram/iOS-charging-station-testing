@@ -17,12 +17,13 @@ class ChargingStationViewSpec: QuickSpec {
 
     private let STATION_NAME = "STATION_NAME_1"
     private let AVAILABLE_STATE = "Available"
+    private let CHARGING_STATE = "Charging"
     private var view: ChargingStationView?
 
     override func spec() {
         describe("When view is rendered") {
             beforeEach { [self] in
-                view = ChargingStationView()
+                view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: FREE_STATE))
             }
 
             it("should display available charging station image") { [self] in
@@ -43,6 +44,20 @@ class ChargingStationViewSpec: QuickSpec {
 
             it("Should display start charging button") { [self] in
                 expect(chargingControlButtonLabel()).to(equal("Start charging"))
+            }
+
+            describe("and user clicks start charging button") {
+                beforeEach { [self] in
+                    try? chargingControlButton()?.tap()
+                }
+
+                it("Should display station state") { [self] in
+                    expect(stationState()).to(equal(FREE_STATE))
+                }
+
+                it("Should display stop charging button") { [self] in
+                    expect(chargingControlButtonLabel()).to(equal("Stop charging"))
+                }
             }
         }
     }
@@ -65,5 +80,9 @@ class ChargingStationViewSpec: QuickSpec {
 
     private func chargingControlButtonLabel() -> String? {
         try? view?.body.inspect().vStack().findAll(ViewType.Button.self)[0].findAll(ViewType.Text.self)[0].string()
+    }
+
+    private func chargingControlButton() -> InspectableView<ViewType.Button>? {
+        try? view?.body.inspect().vStack().findAll(ViewType.Button.self)[0]
     }
 }
