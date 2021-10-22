@@ -9,6 +9,10 @@ target 'chargingstationtesting' do
 
   target 'chargingstationtestingTests' do
     inherit! :search_paths
+    pod 'ViewInspector'
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'Cuckoo'
     # Pods for testing
   end
 

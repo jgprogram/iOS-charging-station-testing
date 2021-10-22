@@ -1,3 +1,30 @@
-PODFILE CHECKSUM: 06f8794c8b0e3a809901d323586ba4fa386485ab
+PODS:
+  - Cuckoo (1.5.1):
+    - Cuckoo/Swift (= 1.5.1)
+  - Cuckoo/Swift (1.5.1)
+  - Nimble (9.2.1)
+  - Quick (4.0.0)
+  - ViewInspector (0.9.0)
+
+DEPENDENCIES:
+  - Cuckoo
+  - Nimble
+  - Quick
+  - ViewInspector
+
+SPEC REPOS:
+  trunk:
+    - Cuckoo
+    - Nimble
+    - Quick
+    - ViewInspector
+
+SPEC CHECKSUMS:
+  Cuckoo: 9124fe138270854903483c270370e6e7658fbc9b
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  ViewInspector: 53313c757eddc5c4842bc7943a66821a68d02d3e
+
+PODFILE CHECKSUM: 28a15d37ce6720a92ee5d098dba51c0b505bebc3
 
 COCOAPODS: 1.11.2

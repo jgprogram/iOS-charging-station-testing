@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		1E5C6A98E524AE428AD52152 /* Pods_chargingstationtestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A15A697EAD0425AD0917E8 /* Pods_chargingstationtestingTests.framework */; };
 		339FBDC4B2FA47C9414D04DD /* Pods_chargingstationtesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AA4E828E074E0E406074C0 /* Pods_chargingstationtesting.framework */; };
-		3FE9F77E2722C39E00B37B4E /* chargingstationtestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F77D2722C39E00B37B4E /* chargingstationtestingApp.swift */; };
-		3FE9F7802722C39E00B37B4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F77F2722C39E00B37B4E /* ContentView.swift */; };
+		3FE9F77E2722C39E00B37B4E /* ChargingStationTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F77D2722C39E00B37B4E /* ChargingStationTestingApp.swift */; };
+		3FE9F7802722C39E00B37B4E /* ChargingStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F77F2722C39E00B37B4E /* ChargingStationView.swift */; };
 		3FE9F7822722C3A100B37B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE9F7812722C3A100B37B4E /* Assets.xcassets */; };
 		3FE9F7852722C3A100B37B4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE9F7842722C3A100B37B4E /* Preview Assets.xcassets */; };
-		3FE9F78F2722C3A200B37B4E /* chargingstationtestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F78E2722C3A200B37B4E /* chargingstationtestingTests.swift */; };
-		3FE9F7992722C3A200B37B4E /* chargingstationtestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F7982722C3A200B37B4E /* chargingstationtestingUITests.swift */; };
-		3FE9F79B2722C3A200B37B4E /* chargingstationtestingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F79A2722C3A200B37B4E /* chargingstationtestingUITestsLaunchTests.swift */; };
+		3FE9F78F2722C3A200B37B4E /* ChargingStationViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F78E2722C3A200B37B4E /* ChargingStationViewSpec.swift */; };
 		DE12130071EF23DD516E111F /* Pods_chargingstationtesting_chargingstationtestingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2798958A722F4249660F9C /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,15 +37,13 @@
 /* Begin PBXFileReference section */
 		0BA2209C03A052302694783B /* Pods-chargingstationtestingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtestingTests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3FE9F77A2722C39E00B37B4E /* chargingstationtesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chargingstationtesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FE9F77D2722C39E00B37B4E /* chargingstationtestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chargingstationtestingApp.swift; sourceTree = "<group>"; };
-		3FE9F77F2722C39E00B37B4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3FE9F77D2722C39E00B37B4E /* ChargingStationTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTestingApp.swift; sourceTree = "<group>"; };
+		3FE9F77F2722C39E00B37B4E /* ChargingStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationView.swift; sourceTree = "<group>"; };
 		3FE9F7812722C3A100B37B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FE9F7842722C3A100B37B4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3FE9F78A2722C3A200B37B4E /* chargingstationtestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chargingstationtestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FE9F78E2722C3A200B37B4E /* chargingstationtestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chargingstationtestingTests.swift; sourceTree = "<group>"; };
+		3FE9F78E2722C3A200B37B4E /* ChargingStationViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationViewSpec.swift; sourceTree = "<group>"; };
 		3FE9F7942722C3A200B37B4E /* chargingstationtestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chargingstationtestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FE9F7982722C3A200B37B4E /* chargingstationtestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chargingstationtestingUITests.swift; sourceTree = "<group>"; };
-		3FE9F79A2722C3A200B37B4E /* chargingstationtestingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chargingstationtestingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5DD1ACF5CF480CFCD12D58B9 /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BE6B945B8DAEDB55C18476C /* Pods-chargingstationtesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting/Pods-chargingstationtesting.debug.xcconfig"; sourceTree = "<group>"; };
 		C3A15A697EAD0425AD0917E8 /* Pods_chargingstationtestingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtestingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +101,6 @@
 			children = (
 				3FE9F77C2722C39E00B37B4E /* chargingstationtesting */,
 				3FE9F78D2722C3A200B37B4E /* chargingstationtestingTests */,
-				3FE9F7972722C3A200B37B4E /* chargingstationtestingUITests */,
 				3FE9F77B2722C39E00B37B4E /* Products */,
 				0519B8A8CE70F8BDE185561D /* Pods */,
 				FE15CD00608FC5C1D93CA095 /* Frameworks */,
@@ -125,8 +120,8 @@
 		3FE9F77C2722C39E00B37B4E /* chargingstationtesting */ = {
 			isa = PBXGroup;
 			children = (
-				3FE9F77D2722C39E00B37B4E /* chargingstationtestingApp.swift */,
-				3FE9F77F2722C39E00B37B4E /* ContentView.swift */,
+				3FE9F77D2722C39E00B37B4E /* ChargingStationTestingApp.swift */,
+				3FE9F77F2722C39E00B37B4E /* ChargingStationView.swift */,
 				3FE9F7812722C3A100B37B4E /* Assets.xcassets */,
 				3FE9F7832722C3A100B37B4E /* Preview Content */,
 			);
@@ -144,18 +139,9 @@
 		3FE9F78D2722C3A200B37B4E /* chargingstationtestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				3FE9F78E2722C3A200B37B4E /* chargingstationtestingTests.swift */,
+				3FE9F78E2722C3A200B37B4E /* ChargingStationViewSpec.swift */,
 			);
 			path = chargingstationtestingTests;
-			sourceTree = "<group>";
-		};
-		3FE9F7972722C3A200B37B4E /* chargingstationtestingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				3FE9F7982722C3A200B37B4E /* chargingstationtestingUITests.swift */,
-				3FE9F79A2722C3A200B37B4E /* chargingstationtestingUITestsLaunchTests.swift */,
-			);
-			path = chargingstationtestingUITests;
 			sourceTree = "<group>";
 		};
 		FE15CD00608FC5C1D93CA095 /* Frameworks */ = {
@@ -197,6 +183,7 @@
 				3FE9F7862722C3A200B37B4E /* Sources */,
 				3FE9F7872722C3A200B37B4E /* Frameworks */,
 				3FE9F7882722C3A200B37B4E /* Resources */,
+				EE8CBF2E43099CD568683E6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,6 +350,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EE8CBF2E43099CD568683E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -370,8 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE9F7802722C39E00B37B4E /* ContentView.swift in Sources */,
-				3FE9F77E2722C39E00B37B4E /* chargingstationtestingApp.swift in Sources */,
+				3FE9F7802722C39E00B37B4E /* ChargingStationView.swift in Sources */,
+				3FE9F77E2722C39E00B37B4E /* ChargingStationTestingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE9F78F2722C3A200B37B4E /* chargingstationtestingTests.swift in Sources */,
+				3FE9F78F2722C3A200B37B4E /* ChargingStationViewSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,8 +391,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FE9F7992722C3A200B37B4E /* chargingstationtestingUITests.swift in Sources */,
-				3FE9F79B2722C3A200B37B4E /* chargingstationtestingUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

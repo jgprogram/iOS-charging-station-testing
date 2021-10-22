@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct chargingstationtestingApp: App {
+struct ChargingStationTestingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChargingStationView()
         }
     }
 }
