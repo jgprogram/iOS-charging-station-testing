@@ -23,7 +23,10 @@ struct ChargingStationView: View {
             Text(viewModel.stationName)
             AvailableStateImage()
             Text(viewModel.stationState)
-            Button(action: {}) {
+
+            Button(action: {
+                viewModel.changeStationState()
+            }) {
                 Text(viewModel.chargingControlButtonLabel)
             }
         }

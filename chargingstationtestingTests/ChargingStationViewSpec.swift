@@ -23,7 +23,7 @@ class ChargingStationViewSpec: QuickSpec {
     override func spec() {
         describe("When view is rendered") {
             beforeEach { [self] in
-                view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: FREE_STATE))
+                view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: AVAILABLE_STATE))
             }
 
             it("should display available charging station image") { [self] in
@@ -52,7 +52,7 @@ class ChargingStationViewSpec: QuickSpec {
                 }
 
                 it("Should display station state") { [self] in
-                    expect(stationState()).to(equal(FREE_STATE))
+                    expect(stationState()).to(equal(CHARGING_STATE))
                 }
 
                 it("Should display stop charging button") { [self] in

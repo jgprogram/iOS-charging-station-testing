@@ -20,4 +20,12 @@ class ChargingStationViewModel: ObservableObject {
         self.stationName = stationName
         self.stationState = stationState
     }
+
+    func changeStationState() {
+        if stationState == "Available" {
+            stationState = "Charging"
+        } else {
+            stationState = "Available"
+        }
+    }
 }
