@@ -22,41 +22,62 @@ class ChargingStationViewSpec: QuickSpec {
 
     override func spec() {
         describe("When view is rendered") {
-            beforeEach { [self] in
-                view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: AVAILABLE_STATE))
-            }
-
-            it("should display available charging station image") { [self] in
-                expect(chargingStationImage()).to(equal("availableChargingStationImage"))
-            }
-
-            it("Should display station name") { [self] in
-                expect(stationName()).to(equal(STATION_NAME))
-            }
-
-            it("should display available station state image") { [self] in
-                expect(availableStateImage()).notTo(beNil())
-            }
-
-            it("Should display station state") { [self] in
-                expect(stationState()).to(equal(AVAILABLE_STATE))
-            }
-
-            it("Should display start charging button") { [self] in
-                expect(chargingControlButtonLabel()).to(equal("Start charging"))
-            }
-
-            describe("and user clicks start charging button") {
+            context("with available state") {
                 beforeEach { [self] in
-                    try? chargingControlButton()?.tap()
+                    view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: AVAILABLE_STATE))
+                }
+
+                it("should display available charging station image") { [self] in
+                    expect(chargingStationImage()).to(equal("availableChargingStationImage"))
+                }
+
+                it("Should display station name") { [self] in
+                    expect(stationName()).to(equal(STATION_NAME))
+                }
+
+                it("should display available station state image") { [self] in
+                    expect(availableStateImage()).notTo(beNil())
                 }
 
                 it("Should display station state") { [self] in
-                    expect(stationState()).to(equal(CHARGING_STATE))
+                    expect(stationState()).to(equal(AVAILABLE_STATE))
                 }
 
-                it("Should display stop charging button") { [self] in
-                    expect(chargingControlButtonLabel()).to(equal("Stop charging"))
+                it("Should display start charging button") { [self] in
+                    expect(chargingControlButtonLabel()).to(equal("Start charging"))
+                }
+
+                describe("and user clicks start charging button") {
+                    beforeEach { [self] in
+                        try? chargingControlButton()?.tap()
+                    }
+
+                    it("Should display charging station state") { [self] in
+                        expect(stationState()).to(equal(CHARGING_STATE))
+                    }
+
+                    it("Should display stop charging button") { [self] in
+                        expect(chargingControlButtonLabel()).to(equal("Stop charging"))
+                    }
+                }
+            }
+
+            context("with charging state") {
+                beforeEach { [self] in
+                    view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: CHARGING_STATE))
+                }
+                describe("and user clicks stop charging button") {
+                    beforeEach { [self] in
+                        try? chargingControlButton()?.tap()
+                    }
+
+                    it("Should display available station state") { [self] in
+                        expect(stationState()).to(equal(AVAILABLE_STATE))
+                    }
+
+                    it("Should display start charging button") { [self] in
+                        expect(chargingControlButtonLabel()).to(equal("Start charging"))
+                    }
                 }
             }
         }
