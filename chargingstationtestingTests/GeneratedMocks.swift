@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: chargingstationtesting/ChargingStationService.swift at 2021-10-29 11:21:18 +0000
+// MARK: - Mocks generated from file: chargingstationtesting/ChargingStationService.swift at 2021-10-29 11:43:04 +0000
 
 //
 // Created by Krzysztof Brawanski on 29/10/2021.
@@ -48,6 +48,21 @@ import Combine
         
     }
     
+    
+    
+     func save(chargingStation: ChargingStation)  {
+        
+    return cuckoo_manager.call("save(chargingStation: ChargingStation)",
+            parameters: (chargingStation),
+            escapingParameters: (chargingStation),
+            superclassCall:
+                
+                Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                ,
+            defaultCall: __defaultImplStub!.save(chargingStation: chargingStation))
+        
+    }
+    
 
 	 struct __StubbingProxy_ChargingStationService: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -60,6 +75,11 @@ import Combine
 	    func loadStation() -> Cuckoo.ProtocolStubFunction<(), AnyPublisher<ChargingStation, Never>> {
 	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
 	        return .init(stub: cuckoo_manager.createStub(for: MockChargingStationService.self, method: "loadStation() -> AnyPublisher<ChargingStation, Never>", parameterMatchers: matchers))
+	    }
+	    
+	    func save<M1: Cuckoo.Matchable>(chargingStation: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(ChargingStation)> where M1.MatchedType == ChargingStation {
+	        let matchers: [Cuckoo.ParameterMatcher<(ChargingStation)>] = [wrap(matchable: chargingStation) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockChargingStationService.self, method: "save(chargingStation: ChargingStation)", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -84,6 +104,12 @@ import Combine
 	        return cuckoo_manager.verify("loadStation() -> AnyPublisher<ChargingStation, Never>", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
+	    @discardableResult
+	    func save<M1: Cuckoo.Matchable>(chargingStation: M1) -> Cuckoo.__DoNotUse<(ChargingStation), Void> where M1.MatchedType == ChargingStation {
+	        let matchers: [Cuckoo.ParameterMatcher<(ChargingStation)>] = [wrap(matchable: chargingStation) { $0 }]
+	        return cuckoo_manager.verify("save(chargingStation: ChargingStation)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
 	}
 }
 
@@ -95,6 +121,10 @@ import Combine
     
      func loadStation() -> AnyPublisher<ChargingStation, Never>  {
         return DefaultValueRegistry.defaultValue(for: (AnyPublisher<ChargingStation, Never>).self)
+    }
+    
+     func save(chargingStation: ChargingStation)   {
+        return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
     
 }

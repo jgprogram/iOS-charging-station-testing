@@ -9,4 +9,8 @@ class InMemoryChargingStationService: ChargingStationService {
         CurrentValueSubject<ChargingStation, Never>(ChargingStation(stationName: "STATION_NAME_1", stationState: "Free"))
             .eraseToAnyPublisher()
     }
+
+    func save(chargingStation: ChargingStation) {
+
+    }
 }

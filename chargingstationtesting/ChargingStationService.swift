@@ -6,4 +6,5 @@ import Combine
 
 protocol ChargingStationService {
     func loadStation() -> AnyPublisher<ChargingStation, Never>
+    func save(chargingStation: ChargingStation)
 }

@@ -26,6 +26,7 @@ class ChargingStationViewModel: ObservableObject {
 
     func changeStationState() {
         chargingStation = chargingStation?.changeState()
+        chargingStationService.save(chargingStation: chargingStation!)
     }
 
     private func loadStation() {
