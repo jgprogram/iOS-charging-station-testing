@@ -19,6 +19,7 @@
 		6F25C9D7F7AC8B3C093D978D /* ChargingStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F25CAA988C3DD916AEB96A9 /* ChargingStation.swift */; };
 		6F25CD941E7C57AE7F55671A /* ChargingStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F25CF1E8C209B9ADE9C984C /* ChargingStationViewModel.swift */; };
 		A6A81D24D29A094C0E57672C /* Pods_chargingstationtestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F22D0675401BBBA7AEAE75A /* Pods_chargingstationtestingTests.framework */; };
+		D91671C1272C0F2800857250 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91671C0272C0F2800857250 /* GeneratedMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D7E2D2431AC68EFDC4E767B /* generate_mocks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generate_mocks.sh; sourceTree = "<group>"; };
 		387F5A7A635BF9116C229AE3 /* Pods-chargingstationtestingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtestingTests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3FE9F77A2722C39E00B37B4E /* chargingstationtesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chargingstationtesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE9F77D2722C39E00B37B4E /* ChargingStationTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTestingApp.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		A197E35EDD38FC95EE65B5FA /* Pods-chargingstationtesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting/Pods-chargingstationtesting.debug.xcconfig"; sourceTree = "<group>"; };
 		A46036BCF9662D68E017ADFF /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A979A2D699E2887F8BF3602F /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D91671C0272C0F2800857250 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +140,9 @@
 		3FE9F78D2722C3A200B37B4E /* chargingstationtestingTests */ = {
 			isa = PBXGroup;
 			children = (
+				D91671C0272C0F2800857250 /* GeneratedMocks.swift */,
 				3FE9F78E2722C3A200B37B4E /* ChargingStationViewSpec.swift */,
+				1D7E2D2431AC68EFDC4E767B /* generate_mocks.sh */,
 			);
 			path = chargingstationtestingTests;
 			sourceTree = "<group>";
@@ -152,7 +157,6 @@
 				387F5A7A635BF9116C229AE3 /* Pods-chargingstationtestingTests.debug.xcconfig */,
 				72C5BCE944DC64209CB92657 /* Pods-chargingstationtestingTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,6 +196,7 @@
 			buildConfigurationList = 3FE9F7A12722C3A200B37B4E /* Build configuration list for PBXNativeTarget "chargingstationtestingTests" */;
 			buildPhases = (
 				083E8DC678274DE2FE422EE1 /* [CP] Check Pods Manifest.lock */,
+				D91671BF272C0E6600857250 /* ShellScript */,
 				3FE9F7862722C3A200B37B4E /* Sources */,
 				3FE9F7872722C3A200B37B4E /* Frameworks */,
 				3FE9F7882722C3A200B37B4E /* Resources */,
@@ -379,6 +384,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D91671BF272C0E6600857250 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./chargingstationtestingTests/generate_mocks.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -400,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FE9F78F2722C3A200B37B4E /* ChargingStationViewSpec.swift in Sources */,
+				D91671C1272C0F2800857250 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

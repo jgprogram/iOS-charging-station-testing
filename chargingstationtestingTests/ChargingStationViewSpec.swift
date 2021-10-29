@@ -8,6 +8,8 @@
 import Quick
 import Nimble
 import ViewInspector
+import Cuckoo
+import Combine
 
 @testable import chargingstationtesting
 
@@ -20,19 +22,26 @@ class ChargingStationViewSpec: QuickSpec {
     private let AVAILABLE_STATE = "Available"
     private let CHARGING_STATE = "Charging"
     private var view: ChargingStationView?
+    private var chargingStationService: MockChargingStationService?
 
     override func spec() {
         describe("When view is rendered") {
             context("with available state") {
                 beforeEach { [self] in
-                    view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: AVAILABLE_STATE))
+                    chargingStationService = MockChargingStationService()
+                    stub(chargingStationService!) { mock in
+                        when(mock).loadStation()
+                            .thenReturn(CurrentValueSubject<ChargingStation, Never>(
+                                ChargingStation(stationName: STATION_NAME, stationState: FREE_STATE)).eraseToAnyPublisher())
+                    }
+                    view = ChargingStationView(ChargingStationViewModel(chargingStationService: chargingStationService!))
                 }
 
                 it("should display available charging station image") { [self] in
                     expect(chargingStationImage()).to(equal("availableChargingStationImage"))
                 }
 
-                it("Should display station name") { [self] in
+                it("should display station name") { [self] in
                     expect(stationName()).to(equal(STATION_NAME))
                 }
 
@@ -40,11 +49,11 @@ class ChargingStationViewSpec: QuickSpec {
                     expect(availableStateImage()).notTo(beNil())
                 }
 
-                it("Should display station state") { [self] in
+                it("should display station state") { [self] in
                     expect(stationState()).to(equal(AVAILABLE_STATE))
                 }
 
-                it("Should display start charging button") { [self] in
+                it("should display start charging button") { [self] in
                     expect(chargingControlButtonLabel()).to(equal("Start charging"))
                 }
 
@@ -73,7 +82,13 @@ class ChargingStationViewSpec: QuickSpec {
 
             context("with charging state") {
                 beforeEach { [self] in
-                    view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: CHARGING_STATE))
+                    chargingStationService = MockChargingStationService()
+                    stub(chargingStationService!) { mock in
+                        when(mock).loadStation()
+                            .thenReturn(CurrentValueSubject<ChargingStation, Never>(
+                                ChargingStation(stationName: STATION_NAME, stationState: CHARGING_STATE)).eraseToAnyPublisher())
+                    }
+                    view = ChargingStationView(ChargingStationViewModel(chargingStationService: chargingStationService!))
                 }
 
                 it("should display charging charging station image") { [self] in
@@ -101,11 +116,11 @@ class ChargingStationViewSpec: QuickSpec {
                         try? chargingControlButton()?.tap()
                     }
 
-                    it("Should display available station state") { [self] in
+                    it("should display available station state") { [self] in
                         expect(stationState()).to(equal(AVAILABLE_STATE))
                     }
 
-                    it("Should display start charging button") { [self] in
+                    it("should display start charging button") { [self] in
                         expect(chargingControlButtonLabel()).to(equal("Start charging"))
                     }
                 }
