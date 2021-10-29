@@ -17,21 +17,23 @@ struct ChargingStationView: View {
 
     var body: some View {
         VStack {
-            Image(viewModel.stationState == "Available" ? "availableChargingStationImage" : "chargingChargingStationImage")
-                .resizable()
-                .frame(width: 100, height: 100)
-            Text(viewModel.stationName)
-            if viewModel.stationState == "Available" {
-                AvailableStateImage()
-            } else {
-                ChargingStateImage()
-            }
-            Text(viewModel.stationState)
+            if let chargingStation = viewModel.chargingStation {
+                Image(viewModel.chargingStation?.stationState == "Available" ? "availableChargingStationImage" : "chargingChargingStationImage")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                Text(viewModel.chargingStation?.stationName)
+                if viewModel.chargingStation?.stationState == "Available" {
+                    AvailableStateImage()
+                } else {
+                    ChargingStateImage()
+                }
+                Text(viewModel.chargingStation?.stationState)
 
-            Button(action: {
-                viewModel.changeStationState()
-            }) {
-                Text(viewModel.chargingControlButtonLabel)
+                Button(action: {
+                    viewModel.changeStationState()
+                }) {
+                    Text(viewModel.chargingControlButtonLabel)
+                }
             }
         }
     }

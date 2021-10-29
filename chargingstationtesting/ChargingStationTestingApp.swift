@@ -11,7 +11,7 @@ import SwiftUI
 struct ChargingStationTestingApp: App {
     var body: some Scene {
         WindowGroup {
-            ChargingStationView(ChargingStationViewModel(stationName: "STATIONNAME1", stationState: "Charging"))
+            ChargingStationView(ChargingStationViewModel())
         }
     }
 }

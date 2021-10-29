@@ -3,29 +3,34 @@
 //
 
 import SwiftUI
+import Combine
 
 class ChargingStationViewModel: ObservableObject {
+    @Published var chargingStation: ChargingStation? = nil
 
-    @Published var stationName: String
-    @Published var stationState: String
+    private let chargingStationService: ChargingStationService
+    private var disposables = Set<AnyCancellable>()
+
     var chargingControlButtonLabel: String {
-        if stationState == "Charging" {
+        if chargingStation?.stationState == "Charging" {
             return "Stop charging"
         } else {
             return "Start charging"
         }
     }
 
-    init(stationName: String, stationState: String) {
-        self.stationName = stationName
-        self.stationState = stationState
+    init(chargingStationService: ChargingStationService = InMemoryChargingStationService()) {
+        self.chargingStationService = chargingStationService
+        loadStation()
     }
 
     func changeStationState() {
-        if stationState == "Available" {
-            stationState = "Charging"
-        } else {
-            stationState = "Available"
-        }
+        chargingStation = chargingStation?.changeState()
+    }
+
+    private func loadStation() {
+        chargingStationService.loadStation()
+            .sink { [weak self] in self?.chargingStation = $0 }
+            .store(in: &disposables)
     }
 }
