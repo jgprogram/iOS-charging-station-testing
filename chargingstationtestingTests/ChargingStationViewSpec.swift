@@ -74,11 +74,11 @@ class ChargingStationViewSpec: QuickSpec {
                         expect(chargingStateImage()).notTo(beNil())
                     }
 
-                    it("Should display charging station state") { [self] in
+                    it("should display charging station state") { [self] in
                         expect(stationState()).to(equal(CHARGING_STATE))
                     }
 
-                    it("Should display stop charging button") { [self] in
+                    it("should display stop charging button") { [self] in
                         expect(chargingControlButtonLabel()).to(equal("Stop charging"))
                     }
 
@@ -144,14 +144,6 @@ class ChargingStationViewSpec: QuickSpec {
         }
     }
 
-    private func chargingStationImage() -> String? {
-        try? view?.body.inspect().vStack().find(ViewType.Image.self).actualImage().name()
-    }
-
-    private func stationName() -> String? {
-        try? view?.body.inspect().vStack().text(1).string()
-    }
-
     private func availableStateImage() -> InspectableView<ViewType.View<AvailableStateImage>>? {
         try? view?.body.inspect().vStack().find(AvailableStateImage.self)
     }
@@ -160,8 +152,16 @@ class ChargingStationViewSpec: QuickSpec {
         try? view?.body.inspect().vStack().find(ChargingStateImage.self)
     }
 
+    private func chargingStationImage() -> String? {
+        try? view?.body.inspect().vStack().find(ViewType.Image.self).actualImage().name()
+    }
+
+    private func stationName() -> String? {
+        try? view?.body.inspect().vStack().hStack(0).findAll(ViewType.Text.self)[1].string()
+    }
+
     private func stationState() -> String? {
-        try? view?.body.inspect().vStack().text(3).string()
+        try? view?.body.inspect().vStack().hStack(0).findAll(ViewType.Text.self)[2].string()
     }
 
     private func chargingControlButtonLabel() -> String? {

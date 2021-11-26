@@ -6,7 +6,7 @@ import Combine
 
 class InMemoryChargingStationService: ChargingStationService {
     func loadStation() -> AnyPublisher<ChargingStation, Never> {
-        CurrentValueSubject<ChargingStation, Never>(ChargingStation(stationName: "STATION_NAME_1", stationState: "Available"))
+        CurrentValueSubject<ChargingStation, Never>(ChargingStation(stationName: "FAST-CHARGER-2137", stationState: "Available"))
             .eraseToAnyPublisher()
     }
 
