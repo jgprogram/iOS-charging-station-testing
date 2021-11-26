@@ -12,6 +12,7 @@ import ViewInspector
 @testable import chargingstationtesting
 
 extension AvailableStateImage: Inspectable {}
+extension ChargingStateImage: Inspectable {}
 
 class ChargingStationViewSpec: QuickSpec {
 
@@ -52,6 +53,14 @@ class ChargingStationViewSpec: QuickSpec {
                         try? chargingControlButton()?.tap()
                     }
 
+                    it("should display charging station image") { [self] in
+                        expect(chargingStationImage()).to(equal("chargingChargingStationImage"))
+                    }
+
+                    it("should display station state image") { [self] in
+                        expect(chargingStateImage()).notTo(beNil())
+                    }
+
                     it("Should display charging station state") { [self] in
                         expect(stationState()).to(equal(CHARGING_STATE))
                     }
@@ -66,6 +75,27 @@ class ChargingStationViewSpec: QuickSpec {
                 beforeEach { [self] in
                     view = ChargingStationView(ChargingStationViewModel(stationName: STATION_NAME, stationState: CHARGING_STATE))
                 }
+
+                it("should display charging charging station image") { [self] in
+                    expect(chargingStationImage()).to(equal("chargingChargingStationImage"))
+                }
+
+                it("should display station name") { [self] in
+                    expect(stationName()).to(equal(STATION_NAME))
+                }
+
+                it("should display charging station state image") { [self] in
+                    expect(chargingStateImage()).notTo(beNil())
+                }
+
+                it("should display station state") { [self] in
+                    expect(stationState()).to(equal(CHARGING_STATE))
+                }
+
+                it("should display stop charging button") { [self] in
+                    expect(chargingControlButtonLabel()).to(equal("Stop charging"))
+                }
+
                 describe("and user clicks stop charging button") {
                     beforeEach { [self] in
                         try? chargingControlButton()?.tap()
@@ -93,6 +123,10 @@ class ChargingStationViewSpec: QuickSpec {
 
     private func availableStateImage() -> InspectableView<ViewType.View<AvailableStateImage>>? {
         try? view?.body.inspect().vStack().find(AvailableStateImage.self)
+    }
+
+    private func chargingStateImage() -> InspectableView<ViewType.View<ChargingStateImage>>? {
+        try? view?.body.inspect().vStack().find(ChargingStateImage.self)
     }
 
     private func stationState() -> String? {

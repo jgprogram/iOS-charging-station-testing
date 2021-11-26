@@ -17,11 +17,15 @@ struct ChargingStationView: View {
 
     var body: some View {
         VStack {
-            Image("availableChargingStationImage")
+            Image(viewModel.stationState == "Available" ? "availableChargingStationImage" : "chargingChargingStationImage")
                 .resizable()
                 .frame(width: 100, height: 100)
             Text(viewModel.stationName)
-            AvailableStateImage()
+            if viewModel.stationState == "Available" {
+                AvailableStateImage()
+            } else {
+                ChargingStateImage()
+            }
             Text(viewModel.stationState)
 
             Button(action: {
@@ -37,6 +41,14 @@ struct AvailableStateImage: View {
     var body: some View {
         Circle()
             .fill(Color.green)
+            .frame(width: 10, height: 10)
+    }
+}
+
+struct ChargingStateImage: View {
+    var body: some View {
+        Circle()
+            .fill(Color.blue)
             .frame(width: 10, height: 10)
     }
 }
