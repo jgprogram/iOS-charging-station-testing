@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct ChargingStationView: View {
+
+    @ObservedObject private var viewModel: ChargingStationViewModel
+
+    init(_ viewModel: ChargingStationViewModel) {
+        self.viewModel = viewModel
+    }
+
     var body: some View {
         VStack {
-            Image("availableChargingStationImage")
+            Image(viewModel.stationState == "Available" ? "availableChargingStationImage" : "chargingChargingStationImage")
                 .resizable()
                 .frame(width: 100, height: 100)
-            Text("STATION_NAME_1")
-            AvailableStateImage()
-            Text("Available")
-            Button(action: {}) {
-                Text("Start charging")
+            Text(viewModel.stationName)
+            if viewModel.stationState == "Available" {
+                AvailableStateImage()
+            } else {
+                ChargingStateImage()
+            }
+            Text(viewModel.stationState)
+
+            Button(action: {
+                viewModel.changeStationState()
+            }) {
+                Text(viewModel.chargingControlButtonLabel)
             }
         }
     }
@@ -31,8 +45,16 @@ struct AvailableStateImage: View {
     }
 }
 
+struct ChargingStateImage: View {
+    var body: some View {
+        Circle()
+            .fill(Color.blue)
+            .frame(width: 10, height: 10)
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ChargingStationView()
+        ChargingStationView(ChargingStationViewModel(stationName: "StationName1", stationState: "Charging"))
     }
 }
