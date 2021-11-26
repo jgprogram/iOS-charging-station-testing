@@ -10,9 +10,9 @@ struct ChargingStation {
 
     func changeState() -> ChargingStation {
         if stationState == "Free" {
-            return ChargingStation(stationName: stationState, stationState: "Charging")
+            return ChargingStation(stationName: stationName, stationState: "Charging")
         } else {
-            return ChargingStation(stationName: stationState, stationState: "Free")
+            return ChargingStation(stationName: stationName, stationState: "Free")
         }
     }
 }
