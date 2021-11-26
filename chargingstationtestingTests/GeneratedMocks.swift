@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: chargingstationtesting/ChargingStationService.swift at 2021-10-29 11:43:04 +0000
+// MARK: - Mocks generated from file: chargingstationtesting/ChargingStationService.swift at 2021-11-26 19:33:48 +0000
 
 //
 // Created by Krzysztof Brawanski on 29/10/2021.

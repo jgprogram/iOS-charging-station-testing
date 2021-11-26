@@ -18,16 +18,16 @@ struct ChargingStationView: View {
     var body: some View {
         VStack {
             if let chargingStation = viewModel.chargingStation {
-                Image(viewModel.chargingStation?.stationState == "Available" ? "availableChargingStationImage" : "chargingChargingStationImage")
+                Image(chargingStation.stationState == "Available" ? "availableChargingStationImage" : "chargingChargingStationImage")
                     .resizable()
                     .frame(width: 100, height: 100)
-                Text(viewModel.chargingStation?.stationName)
-                if viewModel.chargingStation?.stationState == "Available" {
+                Text(chargingStation.stationName)
+                if chargingStation.stationState == "Available" {
                     AvailableStateImage()
                 } else {
                     ChargingStateImage()
                 }
-                Text(viewModel.chargingStation?.stationState)
+                Text(chargingStation.stationState)
 
                 Button(action: {
                     viewModel.changeStationState()
@@ -57,6 +57,6 @@ struct ChargingStateImage: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ChargingStationView(ChargingStationViewModel(stationName: "StationName1", stationState: "Charging"))
+        ChargingStationView(ChargingStationViewModel())
     }
 }

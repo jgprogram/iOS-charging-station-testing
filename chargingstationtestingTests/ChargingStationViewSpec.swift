@@ -33,7 +33,7 @@ class ChargingStationViewSpec: QuickSpec {
                     stub(chargingStationService!) { mock in
                         when(mock).loadStation()
                             .thenReturn(CurrentValueSubject<ChargingStation, Never>(
-                                ChargingStation(stationName: STATION_NAME, stationState: FREE_STATE)).eraseToAnyPublisher())
+                                ChargingStation(stationName: STATION_NAME, stationState: AVAILABLE_STATE)).eraseToAnyPublisher())
                         when(mock).save(chargingStation: any()).thenDoNothing()
                     }
 
@@ -137,7 +137,7 @@ class ChargingStationViewSpec: QuickSpec {
 
                     it("should save station with new state") { [self] in
                         verify(chargingStationService!, times(1)).save(chargingStation: chargingStationCaptor!.capture())
-                        expect(chargingStationCaptor?.value?.stationState).to(equal(FREE_STATE))
+                        expect(chargingStationCaptor?.value?.stationState).to(equal(AVAILABLE_STATE))
                     }
                 }
             }
