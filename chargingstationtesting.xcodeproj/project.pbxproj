@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E5C6A98E524AE428AD52152 /* Pods_chargingstationtestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A15A697EAD0425AD0917E8 /* Pods_chargingstationtestingTests.framework */; };
-		339FBDC4B2FA47C9414D04DD /* Pods_chargingstationtesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8AA4E828E074E0E406074C0 /* Pods_chargingstationtesting.framework */; };
 		3FE9F77E2722C39E00B37B4E /* ChargingStationTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F77D2722C39E00B37B4E /* ChargingStationTestingApp.swift */; };
 		3FE9F7802722C39E00B37B4E /* ChargingStationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F77F2722C39E00B37B4E /* ChargingStationView.swift */; };
 		3FE9F7822722C3A100B37B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE9F7812722C3A100B37B4E /* Assets.xcassets */; };
 		3FE9F7852722C3A100B37B4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE9F7842722C3A100B37B4E /* Preview Assets.xcassets */; };
 		3FE9F78F2722C3A200B37B4E /* ChargingStationViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE9F78E2722C3A200B37B4E /* ChargingStationViewSpec.swift */; };
-		DE12130071EF23DD516E111F /* Pods_chargingstationtesting_chargingstationtestingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2798958A722F4249660F9C /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */; };
+		67113DABECEBC3698C4019C6 /* Pods_chargingstationtesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3465CF04C6488AA8BE5862 /* Pods_chargingstationtesting.framework */; };
+		699E5F765A4A4CB38C12939E /* Pods_chargingstationtesting_chargingstationtestingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56319F0EE444A808BEA0C8BE /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */; };
+		6F25CD941E7C57AE7F55671A /* ChargingStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F25CF1E8C209B9ADE9C984C /* ChargingStationViewModel.swift */; };
+		A6A81D24D29A094C0E57672C /* Pods_chargingstationtestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F22D0675401BBBA7AEAE75A /* Pods_chargingstationtestingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BA2209C03A052302694783B /* Pods-chargingstationtestingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtestingTests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		387F5A7A635BF9116C229AE3 /* Pods-chargingstationtestingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtestingTests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3FE9F77A2722C39E00B37B4E /* chargingstationtesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chargingstationtesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE9F77D2722C39E00B37B4E /* ChargingStationTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTestingApp.swift; sourceTree = "<group>"; };
 		3FE9F77F2722C39E00B37B4E /* ChargingStationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationView.swift; sourceTree = "<group>"; };
@@ -44,14 +45,15 @@
 		3FE9F78A2722C3A200B37B4E /* chargingstationtestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chargingstationtestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE9F78E2722C3A200B37B4E /* ChargingStationViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationViewSpec.swift; sourceTree = "<group>"; };
 		3FE9F7942722C3A200B37B4E /* chargingstationtestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chargingstationtestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DD1ACF5CF480CFCD12D58B9 /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8BE6B945B8DAEDB55C18476C /* Pods-chargingstationtesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting/Pods-chargingstationtesting.debug.xcconfig"; sourceTree = "<group>"; };
-		C3A15A697EAD0425AD0917E8 /* Pods_chargingstationtestingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtestingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8AA4E828E074E0E406074C0 /* Pods_chargingstationtesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8B23E8DA498EEB7E3188F42 /* Pods-chargingstationtestingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtestingTests.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests.release.xcconfig"; sourceTree = "<group>"; };
-		CB2798958A722F4249660F9C /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtesting_chargingstationtestingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0D18DD0C383D361493D36D5 /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E84173F5A61291DC3A1011E1 /* Pods-chargingstationtesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting/Pods-chargingstationtesting.release.xcconfig"; sourceTree = "<group>"; };
+		56319F0EE444A808BEA0C8BE /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtesting_chargingstationtestingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F25CF1E8C209B9ADE9C984C /* ChargingStationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChargingStationViewModel.swift; sourceTree = "<group>"; };
+		72C5BCE944DC64209CB92657 /* Pods-chargingstationtestingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtestingTests.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtestingTests/Pods-chargingstationtestingTests.release.xcconfig"; sourceTree = "<group>"; };
+		84C7B6A42F64057A922DE728 /* Pods-chargingstationtesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting/Pods-chargingstationtesting.release.xcconfig"; sourceTree = "<group>"; };
+		8C3465CF04C6488AA8BE5862 /* Pods_chargingstationtesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F22D0675401BBBA7AEAE75A /* Pods_chargingstationtestingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chargingstationtestingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A197E35EDD38FC95EE65B5FA /* Pods-chargingstationtesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting/Pods-chargingstationtesting.debug.xcconfig"; sourceTree = "<group>"; };
+		A46036BCF9662D68E017ADFF /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A979A2D699E2887F8BF3602F /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; path = "Target Support Files/Pods-chargingstationtesting-chargingstationtestingUITests/Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				339FBDC4B2FA47C9414D04DD /* Pods_chargingstationtesting.framework in Frameworks */,
+				67113DABECEBC3698C4019C6 /* Pods_chargingstationtesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5C6A98E524AE428AD52152 /* Pods_chargingstationtestingTests.framework in Frameworks */,
+				A6A81D24D29A094C0E57672C /* Pods_chargingstationtestingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,35 +77,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE12130071EF23DD516E111F /* Pods_chargingstationtesting_chargingstationtestingUITests.framework in Frameworks */,
+				699E5F765A4A4CB38C12939E /* Pods_chargingstationtesting_chargingstationtestingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0519B8A8CE70F8BDE185561D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8BE6B945B8DAEDB55C18476C /* Pods-chargingstationtesting.debug.xcconfig */,
-				E84173F5A61291DC3A1011E1 /* Pods-chargingstationtesting.release.xcconfig */,
-				5DD1ACF5CF480CFCD12D58B9 /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */,
-				D0D18DD0C383D361493D36D5 /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */,
-				0BA2209C03A052302694783B /* Pods-chargingstationtestingTests.debug.xcconfig */,
-				C8B23E8DA498EEB7E3188F42 /* Pods-chargingstationtestingTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		3FE9F7712722C39E00B37B4E = {
 			isa = PBXGroup;
 			children = (
 				3FE9F77C2722C39E00B37B4E /* chargingstationtesting */,
 				3FE9F78D2722C3A200B37B4E /* chargingstationtestingTests */,
 				3FE9F77B2722C39E00B37B4E /* Products */,
-				0519B8A8CE70F8BDE185561D /* Pods */,
-				FE15CD00608FC5C1D93CA095 /* Frameworks */,
+				D348F79E00BCFD653283B4E8 /* Pods */,
+				EE17583910BCA0618626B787 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +112,7 @@
 				3FE9F77F2722C39E00B37B4E /* ChargingStationView.swift */,
 				3FE9F7812722C3A100B37B4E /* Assets.xcassets */,
 				3FE9F7832722C3A100B37B4E /* Preview Content */,
+				6F25CF1E8C209B9ADE9C984C /* ChargingStationViewModel.swift */,
 			);
 			path = chargingstationtesting;
 			sourceTree = "<group>";
@@ -144,12 +133,26 @@
 			path = chargingstationtestingTests;
 			sourceTree = "<group>";
 		};
-		FE15CD00608FC5C1D93CA095 /* Frameworks */ = {
+		D348F79E00BCFD653283B4E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C8AA4E828E074E0E406074C0 /* Pods_chargingstationtesting.framework */,
-				CB2798958A722F4249660F9C /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */,
-				C3A15A697EAD0425AD0917E8 /* Pods_chargingstationtestingTests.framework */,
+				A197E35EDD38FC95EE65B5FA /* Pods-chargingstationtesting.debug.xcconfig */,
+				84C7B6A42F64057A922DE728 /* Pods-chargingstationtesting.release.xcconfig */,
+				A979A2D699E2887F8BF3602F /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */,
+				A46036BCF9662D68E017ADFF /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */,
+				387F5A7A635BF9116C229AE3 /* Pods-chargingstationtestingTests.debug.xcconfig */,
+				72C5BCE944DC64209CB92657 /* Pods-chargingstationtestingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE17583910BCA0618626B787 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3465CF04C6488AA8BE5862 /* Pods_chargingstationtesting.framework */,
+				56319F0EE444A808BEA0C8BE /* Pods_chargingstationtesting_chargingstationtestingUITests.framework */,
+				9F22D0675401BBBA7AEAE75A /* Pods_chargingstationtestingTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,7 +164,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FE9F79E2722C3A200B37B4E /* Build configuration list for PBXNativeTarget "chargingstationtesting" */;
 			buildPhases = (
-				43331BDA7BAFD4737E953A35 /* [CP] Check Pods Manifest.lock */,
+				2D594717D09E791B2B07DA60 /* [CP] Check Pods Manifest.lock */,
 				3FE9F7762722C39E00B37B4E /* Sources */,
 				3FE9F7772722C39E00B37B4E /* Frameworks */,
 				3FE9F7782722C39E00B37B4E /* Resources */,
@@ -179,11 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FE9F7A12722C3A200B37B4E /* Build configuration list for PBXNativeTarget "chargingstationtestingTests" */;
 			buildPhases = (
-				C11F44F74A6D2866570DFFED /* [CP] Check Pods Manifest.lock */,
+				083E8DC678274DE2FE422EE1 /* [CP] Check Pods Manifest.lock */,
 				3FE9F7862722C3A200B37B4E /* Sources */,
 				3FE9F7872722C3A200B37B4E /* Frameworks */,
 				3FE9F7882722C3A200B37B4E /* Resources */,
-				EE8CBF2E43099CD568683E6D /* [CP] Embed Pods Frameworks */,
+				6E5A3A75F4C61CFBF8EB4A1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,7 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FE9F7A42722C3A200B37B4E /* Build configuration list for PBXNativeTarget "chargingstationtestingUITests" */;
 			buildPhases = (
-				24E4CB239B201C975258C5E7 /* [CP] Check Pods Manifest.lock */,
+				05D69E177F8CDCCBD58B640C /* [CP] Check Pods Manifest.lock */,
 				3FE9F7902722C3A200B37B4E /* Sources */,
 				3FE9F7912722C3A200B37B4E /* Frameworks */,
 				3FE9F7922722C3A200B37B4E /* Resources */,
@@ -284,7 +287,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24E4CB239B201C975258C5E7 /* [CP] Check Pods Manifest.lock */ = {
+		05D69E177F8CDCCBD58B640C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,29 +309,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		43331BDA7BAFD4737E953A35 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-chargingstationtesting-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C11F44F74A6D2866570DFFED /* [CP] Check Pods Manifest.lock */ = {
+		083E8DC678274DE2FE422EE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,7 +331,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE8CBF2E43099CD568683E6D /* [CP] Embed Pods Frameworks */ = {
+		2D594717D09E791B2B07DA60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chargingstationtesting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E5A3A75F4C61CFBF8EB4A1E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -376,6 +379,7 @@
 			files = (
 				3FE9F7802722C39E00B37B4E /* ChargingStationView.swift in Sources */,
 				3FE9F77E2722C39E00B37B4E /* ChargingStationTestingApp.swift in Sources */,
+				6F25CD941E7C57AE7F55671A /* ChargingStationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +532,7 @@
 		};
 		3FE9F79F2722C3A200B37B4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BE6B945B8DAEDB55C18476C /* Pods-chargingstationtesting.debug.xcconfig */;
+			baseConfigurationReference = A197E35EDD38FC95EE65B5FA /* Pods-chargingstationtesting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,7 +562,7 @@
 		};
 		3FE9F7A02722C3A200B37B4E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E84173F5A61291DC3A1011E1 /* Pods-chargingstationtesting.release.xcconfig */;
+			baseConfigurationReference = 84C7B6A42F64057A922DE728 /* Pods-chargingstationtesting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -588,7 +592,7 @@
 		};
 		3FE9F7A22722C3A200B37B4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0BA2209C03A052302694783B /* Pods-chargingstationtestingTests.debug.xcconfig */;
+			baseConfigurationReference = 387F5A7A635BF9116C229AE3 /* Pods-chargingstationtestingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -613,7 +617,7 @@
 		};
 		3FE9F7A32722C3A200B37B4E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8B23E8DA498EEB7E3188F42 /* Pods-chargingstationtestingTests.release.xcconfig */;
+			baseConfigurationReference = 72C5BCE944DC64209CB92657 /* Pods-chargingstationtestingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -638,7 +642,7 @@
 		};
 		3FE9F7A52722C3A200B37B4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DD1ACF5CF480CFCD12D58B9 /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */;
+			baseConfigurationReference = A979A2D699E2887F8BF3602F /* Pods-chargingstationtesting-chargingstationtestingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -661,7 +665,7 @@
 		};
 		3FE9F7A62722C3A200B37B4E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0D18DD0C383D361493D36D5 /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */;
+			baseConfigurationReference = A46036BCF9662D68E017ADFF /* Pods-chargingstationtesting-chargingstationtestingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
